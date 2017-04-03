@@ -1,0 +1,233 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 900px) {
+
+  .main-nav a {
+    font-size: .79em;
+  }
+
+	body {
+		padding-top: 68px;
+	}
+
+	.main-header {
+		position: fixed;
+		background: #fff;
+		box-shadow: 0 1px 4px rgba(102, 0, 163, .5);
+		width: 100%;
+		top: 0;
+		z-index: 1000;
+	}
+
+	.main-footer {
+		padding: auto 20px;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.name,
+	.col {
+		float: left;
+	}
+
+	.primary,
+	.secondary,
+	.tertiary,
+	.quaternary {
+		width: 50%;
+	}
+
+	.main-nav,
+	.footer-nav {
+		float: center;
+    text-align: center;
+	}
+
+	.main-nav li,
+	.footer-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	.footer-nav li {
+		width: inherit;
+	}
+
+	.footer-nav li a {
+		padding: 10px 15px;
+	}
+
+	.tagline {
+		font-size: 1.6em;
+	}
+
+  .headline {
+    font-size: 3em;
+  }
+
+  .tertiary p,
+	.quaternary p {
+    text-align: center;
+  }
+
+  .location {
+    width: 100%;
+  }
+
+	.reviews {
+		width: 80%;
+		margin: 0 10%;
+	}
+
+	.try {
+		width: 75%;
+		margin-bottom: 100px;
+		margin-right: 12.5%;
+		margin-left: 12.5%;
+	}
+
+  .pri-footer,
+  .sec-footer,
+  .tert-footer {
+    font-size: .95em;
+  }
+
+  .pri-footer,
+  .tert-footer {
+    width: 30%;
+  }
+
+  .sec-footer {
+     width: 40%;
+  }
+
+  .footer-info {
+    text-align: left;
+  }
+
+  .index {
+    margin: 10px 0;
+  }
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+  
+  .header-image {
+    float: left;
+  }
+
+	.main-nav li,
+	.main-nav li:first-child {
+		border: none;
+	}
+
+}
+
+@media (min-width: 1098px) {
+
+  .main-nav a {
+    font-size: .95em;
+  }
+	
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
+
+	.primary {
+		width: 40%;
+	}
+
+   /** footer col styling **/
+  .pri-footer,
+  .tert-footer {
+    width: 30%;
+  }
+
+  .sec-footer {
+    width: 40%;
+  }
+  
+	.tertiary,
+  .secondary,
+	.quaternary {
+		width: 30%;
+	}
+
+  .tertiary td {
+    font-size: .87em;
+  }
+
+	.tertiary p,
+	.quaternary p {
+    text-align: left;
+  }
+
+  .location {
+    width: 100%;
+  }
+
+	.contact {
+		width: 50%;
+	}
+
+  .contact img {
+    max-width: 45%;
+  }
+
+  .contact img:last-child {
+    display: block;
+    margin: 0 25%;
+  }
+
+  .tertiary.col.contact {
+    width: 49%;
+  }
+
+  .reviews {
+    width: 80%;
+  }
+
+	.try {
+		width: 75%;
+		margin-bottom: 200px;
+		margin-right: 12.5%;
+		margin-left: 12.5%;
+	}
+  
+  .footer-info {
+    text-align: left;
+  }
+  
+  .tertiary.col.contact {
+    padding-left: 40px;
+  }
+
+  .secondary.col.contact {
+    padding-right: 40px;
+  }
+
+  .index {
+    margin: 10px 0;
+  }
+
+}
+
+@media (min-width: 1213px) {
+
+  .tertiary td {
+    font-size: 1em;
+  }
+
+}

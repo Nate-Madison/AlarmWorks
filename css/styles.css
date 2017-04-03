@@ -1,0 +1,631 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+strong {
+	font-weight: 500;
+	color: yellow;
+}
+
+.tertiary p strong {
+	font-weight: 500;
+	color: rgba(102, 0, 163, 1);
+}
+
+h2,
+h3,
+a {
+	color: #58009b;
+}
+
+h2,
+h3,
+h4 {
+	margin-top: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+	margin-bottom: .4em;
+}
+
+a {
+  color: #58009b;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin: 0;
+	line-height: 0;
+	position: relative;
+	border: 2px solid rgba(102, 0, 163, .7);
+	border-radius: 5px;
+}
+
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+	color: white;
+	padding: 1em;	
+	background: rgba(102, 0, 163, .7);
+	
+	width: 100%;
+}
+
+figcaption a,
+.reviews ul li h4 a {
+	color: yellow;
+}
+
+figcaption a:hover,
+.reviews ul li h4 a:hover {
+	color: rgba(255, 255, 0, .9);
+	text-decoration: underline;
+}
+
+.reviews h3 {
+  text-align: center;
+}
+
+a:hover {
+  color: rgba(102, 0, 163, .7);
+  text-decoration: underline;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.main-nav {
+  display: block;
+	margin-top: 5px;
+  margin-right: auto;
+}
+
+.name a,
+.main-nav a {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.main-nav a {
+  font-size: .95em;
+  color: #58009b;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-nav a:hover,
+.main-nav a.selected {
+  color: white;
+	background-color: rgba(102, 0, 163, .7);
+	text-decoration: none;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner {
+  text-align: center;
+}
+
+.main-footer {
+	text-align: left;
+}
+
+.footer-nav {
+  text-align: center;
+}
+
+.main-footer,
+.footer-nav a {
+	font-weight: bold;
+  color: gray;
+}
+
+.main-footer {
+	color: #3a3a3a;
+	min-height: calc(275.75px - 100vh);
+}
+
+.hkl {
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.hkl:first-child {
+  margin-top: 15px;
+}
+
+.footer-info {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.footer-info:first-child {
+  margin-top: 15px;
+}
+
+.footer-info {
+  text-align: center;
+}
+
+.pri-footer p strong {
+  color: #3a3a3a;
+}
+
+/* -- .footer-nav is in .main-footer, contains many similar styles to .main-nav -- */
+.footer-nav {
+  display: block;
+	margin-top: 5px;
+  margin-right: auto;
+	float: center;
+}
+
+.footer-nav li {
+	width: 100%;
+}
+
+.footer-nav li a {
+	color: #3a3a3a;
+	display: inline-block;
+	width: 100%;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+.footer-nav a:hover,
+.footer-nav a.selected {
+	background-color: #6a6a6a;
+	color: white;
+	text-decoration: none;
+}
+
+/* -- Banner Background -- */
+.banner {
+	color: white;
+	
+	text-shadow: 3px 3px 10px #5d2a91;
+	background: linear-gradient(transparent, #fefefe),
+							linear-gradient(rgba(102, 0, 163, .8), transparent),
+							url(../images/alarm-works-location.png) no-repeat;
+  background-size: cover;
+  background-position: 35% 35%;
+	
+	padding: 6em 0;
+	margin-bottom: 60px;
+}
+
+.small {
+  padding: 3em 0;
+}
+
+/* -- basic styling for content columns -- */
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.reviews ul li {
+	font-weight: 500;
+	background: rgba(102, 0, 163, .7);
+	color: white;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.reviews ul li:last-child {
+  margin: 0 0 90px;
+}
+
+.reviews ul li:hover {
+	box-shadow: 2px 2px 3px rgba(102, 0, 163, .5);
+}
+
+.reviews ul li p {
+	padding: 6px;
+	margin: 5px 0;
+	font-style: italic;
+}
+
+/* -- .edit is in .main-footer -- */
+.edit p {
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.edit p a {
+	color: rgba(102, 0, 163, 1);
+	/*text-decoration: underline;*/
+}
+
+.edit p a:hover {
+	opacity: 0.7;
+}
+
+/* -- .[word-number] is in the main content area -- */
+.tertiary {
+	padding: 0 .5em;
+}
+
+.contact img {
+	border: 2px solid rgba(102, 0, 163, .7);
+	border-radius: 5px;
+  max-width: 30%;
+  margin: 5px;
+}
+
+.contact.about img {
+  border: none;
+}
+
+.contact img:last-child {
+  display: block;
+  margin: 0 15%;
+}
+
+.tertiary p,
+.quaternary p {
+  text-align: center;
+	margin: 2px 0;
+}
+
+.index {
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+.index h2 {
+  margin-bottom: 5px;
+}
+
+#address p::first-line {
+  padding-left: 0;
+}
+
+#address p {
+  padding-left: 20px;
+}
+
+.tertiary.contact {
+  margin-bottom: 90px;
+}
+
+.tertiary.contact.about {
+  margin-bottom: 70px;
+}
+
+.spec {
+	margin-top: 40px;
+}
+
+.primary {
+  margin-bottom: 20px;
+}
+
+/* -- .main-footer contains .footer-nav -- */
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+.main-footer strong {
+  color: #58009b;
+  font-weight: 600;
+}
+
+/* -- Company Logo -- */
+.header-image {
+  display: block;
+  float: center;
+  height: 50px;
+  margin: 0 auto;
+}
+
+/* ---- Page Elements ---- */
+
+.headline {
+	margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* ------- Tables --------- */
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+table {
+	max-width: 960px;
+	margin: 10px auto;
+}
+
+caption {
+	font-size: 1.6em;
+	font-weight: 400;
+	padding: 10px 0;
+}
+
+thead th {
+	font-weight: 500;
+	font-size: 1.07em;
+	border-top: none;
+	background: rgba(102, 0, 163, .7);
+	color: #FFF;
+}
+
+tr {
+	background: #f4f7f8;
+	border-bottom: 1px solid #FFF;
+	margin-bottom: 5px;
+}
+
+tr:nth-child(2n) {
+	background: #e8eeef;
+}
+
+th, td {
+	text-align: left;
+	padding: 19px;
+	font-weight: 500;
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	border-top: 3px solid #fff;
+	border-left: 3px solid #fff;
+}
+
+tfoot tr {
+	background: none;
+}
+
+tfoot td {
+	padding: 10px 2px;
+	font-size: 0.8em;
+	font-style: italic;
+	color: #8a97a0;
+}
+
+.emperors-new-table tr td {
+  background: white;
+  border: none;
+  padding: 0 10px;
+}
+
+.con-info {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.left {
+  font-weight: bold;
+}
+
+
+/*******************
+  HTML Forms
+*******************/
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+/* -- .location-form is used to re-style components of the forms -- */
+
+.location-form {
+  max-width: 100%;
+  background: none;
+  padding: 0;
+}
+
+.location-form input[type="text"] {
+  height: 100px;
+  font-size: 2em;
+  color: #500072;
+	border-left: 3px solid #500072;
+  border-bottom: 3px dashed #500072;
+  
+  background: none;
+  box-shadow: none;
+}
+
+.location-form input[type="text"]:hover {
+  background: #f5f5f5;
+}
+
+.location-form button,
+.try-again {
+  display: block;
+  margin: 0 20%;  
+  
+  background-color: rgba(102, 0, 163, .8);
+	color: white;
+  border: none;
+  border-radius: 0;
+	padding: 10px 0;
+  max-width: 60%;
+}
+
+.location-form button:hover,
+.try-again:hover {
+	color: white;
+	text-decoration: none;
+	opacity: .85;
+	box-shadow: 2px 2px 3px rgba(0,0,0, .6);
+}
+
+.primary .location-form {
+  margin-bottom: 60px;
+}
+
+.tertiary.col.location {
+  margin-bottom: 60px;
+}
+
+/** .con is used to specify contact.html **/
+.location-form.con input[type="text"] {
+	height: 50px;
+	font-size: 1.3em;
+}
+
+.location-form.con textarea {
+	border-left: 3px solid #500072;
+	border-bottom: 3px dashed #500072;
+	color: #500072;
+	font-size: 1.3em;
+	
+	box-shadow: none;
+	background: none;
+}
+
+.location-form.con textarea:hover {
+	background: #f5f5f5;
+}
+
+.location-form input[type="text"]:hover,
+.location-form.con textarea:hover {
+	border-bottom: 3px solid #500072;
+}
+
+/** changes color of placeholder **/
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #500072;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}

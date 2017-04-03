@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Works | Location</title>
+		<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<!-- Css Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+		
+		<!-- Favicon -->
+    <link rel="shortcut icon" href="images/alarm-works-logo.ico" type="image/x-icon">
+  </head>
+  <body>
+    
+    <header class="main-header top">
+      <div class="container clearfix">
+				<!-- Company Logo -->
+        <a class="img-link" href="index.html"><img class="header-image" src="images/alarm-works-logo.svg" alt="Company Logo"></a>
+        <!-- Navigation  -->
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+					<li><a href="testimonials.html">Testimonials</a></li>
+					<li><a href="location.html" class="selected">Location</a></li>
+        </ul>
+      </div>
+    </header><!--/.main-header-->   
+  
+    <div class="banner small">
+      <h1 class="headline">Alarm Works</h1>
+      <span class="tagline">Jackson, TN</span>
+    </div><!--/.banner-->
+  
+    <div class="container clearfix">
+      
+      <div class="primary col location">
+        <h2>Directions</h2>
+        
+				<!-- Directions form (uses google saddr and daddr) -->
+				<form action="https://maps.google.com/maps" method="get" target="_blank" class="location-form">
+          <input type="text" name="saddr" placeholder="Enter Your Location">
+          <input type="hidden" name="daddr" value="Alarm Works of Jackson Inc">
+          <button type="submit">Get Directions</button>
+        </form>
+        
+      </div><!--/.primary-->
+      
+      <div class="tertiary col location">
+        <h2>Our Location</h2>
+        
+         <!-- google maps integration -->
+        <figure>
+          <iframe width="100%" height="300" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ7zeGNJCmfogR4fw9H10BS_w&key=AIzaSyA5lM8n8g2QZfg1cg9nkgCj9D_LUXSpY_s" allowfullscreen></iframe>
+        </figure>
+        <!--  /google maps integration -->
+      </div><!--/.tertiary-->	
+			
+    </div><!--/.container-->
+		
+			<footer class="main-footer clearfix">
+				<!-- nav footer -->
+				<ul class="footer-nav" id="nonstyle">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="pricing.html">pricing</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="testimonials.html">Testimonials</a></li>
+					<li><a href="location.html" class="selected">Location</a></li>
+				</ul>
+				<!-- /nav footer -->
+        
+				<div class="pri-footer col">
+          <p class="footer-info"><strong>Saturday &amp; Sunday -</strong> Closed</p>
+          <p class="footer-info"><strong>Monday-Friday -</strong> 8:00AM - 5:00PM</p>
+        </div>
+        
+				<div class="sec-footer col">
+					<!-- footer information -->
+					<p class="footer-info">Our Phone Number: <a href="tel:731-660-7770">(731) 660-7770</a></p>
+					<p class="footer-info">Our Address: <a href="location.html">200 Stonebridge Blvd, Jackson, TN 38305</a></p>
+          <p class="footer-info">Our E-mail: <a href="mailto:kdbasham@yahoo.com">kdbasham@yahoo.com</a></p>
+        </div>
+        
+        <div class="tert-footer col">
+          <p class="footer-info">Logo is not to be used under any condition.</p>
+					<p class="footer-info">&copy;2017 Alarm Works of Jackson Inc.</p>
+					<p class="footer-info"><a href="#top">Back to Top &raquo;</a></p>
+				</div>
+        
+			</footer>
+  </body>
+</html>
